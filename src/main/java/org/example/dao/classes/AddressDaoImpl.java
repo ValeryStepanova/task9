@@ -29,8 +29,8 @@ public class AddressDaoImpl extends DAOImpl<Address> implements DAOAddress {
     }
 
     @Override
-    public void delete(int id, Class<Address> addressClass) {
-        super.delete(id, addressClass);
+    public Address delete(int id, Class<Address> addressClass) {
+        return super.delete(id, addressClass);
     }
 
     @Override
