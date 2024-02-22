@@ -30,8 +30,8 @@ public class PeopleDaoImpl extends DAOImpl<People> implements DAOPeople {
     }
 
     @Override
-    public void delete(int id, Class<People> peopleClass) {
-        super.delete(id, peopleClass);
+    public People delete(int id, Class<People> peopleClass) {
+        return super.delete(id, peopleClass);
     }
 
     @Override

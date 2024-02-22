@@ -65,12 +65,6 @@
             <version>0.8.8</version>
             <configuration>
                 <excludes>
-                    <!--   <exclude>
-                           application/utils/Printer.class
-                       </exclude>-->
-                    <exclude>
-                        application/utils/ConstantContainer.class
-                    </exclude>
                     <exclude>
                         application/utils/HibernateUtil.class
                     </exclude>

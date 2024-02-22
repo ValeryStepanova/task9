@@ -58,13 +58,14 @@ public class DAOImpl<T> implements DAO<T> {
     }
 
     @Override
-    public void delete(int id, Class<T> tClass) {
+    public T delete(int id, Class<T> tClass) {
         EntityManager entityManager = HibernateUtil.getEntityManager();
         entityManager.getTransaction().begin();
         T obj = entityManager.find(tClass, id);
         entityManager.remove(obj);
         entityManager.getTransaction().commit();
         entityManager.close();
+        return obj;
     }
 
     private boolean checkFindById(T object) {
